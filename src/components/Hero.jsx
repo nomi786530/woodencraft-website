@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 const slides = [
   {
     id: 1,
-    image: "/images/hero1.jpg",
+    image: "/images/h-1.jpg",
     title: "Handcrafted Wooden Art",
     subtitle: "Bring warmth and elegance to your home with our wooden crafts.",
   },
@@ -22,7 +22,7 @@ const slides = [
     id: 3,
     image: "/images/hero3.jpg",
     title: "Nature-Inspired Designs",
-    subtitle: "Wooden crafts made with love, inspired by the beauty of nature.",
+    subtitle: "Grand Points made with love, inspired by the beauty of nature.",
   },
 ];
 

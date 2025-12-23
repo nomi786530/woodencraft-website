@@ -1,35 +1,27 @@
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Shop from './pages/Shop';
-import Cart from './pages/Cart';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Checkout from './pages/Checkout';
-import ThankYou from './pages/ThankYou';
+import { Routes, Route } from "react-router-dom";
 
-import Navbar from './components/Navbar';
-import ProtectedRoute from './components/ProtectedRoute';
+import Navbar from "./components/Navbar";
 
-
+import Home from "./pages/Home";
+import Collections from "./pages/Collections";
+import About from "./pages/About";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <Navbar />
-      <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/shop" element={<Shop />} />
-      <Route path="/cart" element={
-        <ProtectedRoute>
-          <Cart />
-        </ProtectedRoute>
-      } />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
-      <Route path="/checkout" element={<Checkout />} />
-      <Route path="/thankyou" element={<ThankYou />} />
 
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/collections" element={<Collections />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <WhatsAppButton/>
     </div>
   );
 }
