@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 const slides = [
   {
     id: 1,
-    image: "/images/h-1.jpg",
+    image: "/images/hero1.jpg",
     title: "Handcrafted Wooden Art",
     subtitle: "Bring warmth and elegance to your home with our wooden crafts.",
   },
@@ -47,9 +47,9 @@ const Hero = () => {
                   {slide.title}
                 </h2>
                 <p className="mb-4 text-base sm:text-lg">{slide.subtitle}</p>
-                <button className="bg-[#8B5E3C] hover:bg-[#6A452C] px-6 py-2 rounded font-medium text-white transition">
+                {/* <button className="bg-[#8B5E3C] hover:bg-[#6A452C] px-6 py-2 rounded font-medium text-white transition">
   Shop Now
-</button>
+</button> */}
 
               </div>
             </div>
