@@ -6,25 +6,27 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinkClass = ({ isActive }) =>
-    `text-md font-semibold transition-colors duration-200 ${
+    `text-sm font-semibold transition-colors duration-200 ${
       isActive
         ? "text-[#8b5e3c]"
         : "text-[#4b4b4b] hover:text-[#8b5e3c]"
     }`;
 
   return (
-    <header className="bg-[#f8f5f1] shadow-md sticky top-0 z-50">
+    <header className="bg-[#f8f5f1] sticky top-0 z-50 border-b border-[#e5dfd7]">
       <nav className="h-16 flex items-center justify-between max-w-7xl mx-auto px-6 sm:px-8">
-        {/* Logo */}
-        <Link to="/" className="h-full py-2 flex items-center">
-          <img
-            src="/images/logo.png"
-            alt="Grand Point"
-            className="h-12 w-auto rounded"
-          />
+        
+        {/* Brand (Text Logo) */}
+        <Link to="/" className="flex flex-col leading-tight">
+          <span className="text-lg font-bold tracking-wide text-[#8b5e3c]">
+            Grand Point
+          </span>
+          <span className="text-xs text-[#4b4b4b]">
+            Decor & Maintenance
+          </span>
         </Link>
 
-        {/* Desktop Nav */}
+        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
           <NavLink to="/" className={navLinkClass}>
             Home
@@ -57,7 +59,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden px-6 pb-4 bg-[#f8f5f1] shadow">
+        <div className="md:hidden bg-[#f8f5f1] px-6 pb-4 border-t border-[#e5dfd7]">
           {[
             { to: "/", label: "Home" },
             { to: "/collections", label: "Collections" },
