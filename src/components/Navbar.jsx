@@ -18,8 +18,8 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="h-full py-2 flex items-center">
           <img
-            src="/public/images/logo-1.png"
-            alt="WoodenCraft Logo"
+            src="/images/logo.png"
+            alt="Grand Point"
             className="h-12 w-auto rounded"
           />
         </Link>
