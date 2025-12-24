@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom";
+import { FiInstagram } from "react-icons/fi";
+import { SiTiktok } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1f1f1f] text-[#e5e5e5] mt-12">
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 py-8 grid gap-8 md:grid-cols-3 text-sm">
-        
+    <footer className="bg-[#1f1f1f] text-[#e5e5e5] mt-16">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 py-10 grid gap-10 md:grid-cols-3 text-sm">
+
         {/* Brand */}
         <div>
-          <h3 className="text-lg font-semibold text-[#8b5e3c] mb-2">
+          <h3 className="text-xl font-semibold text-[#8b5e3c] mb-3">
             Grand Point
           </h3>
-          <p className="leading-relaxed text-[#cfcfcf]">
+          <p className="leading-relaxed text-[#cfcfcf] max-w-sm">
             Handcrafted wooden furniture and decor, made with care, precision,
             and respect for natural materials.
           </p>
@@ -18,10 +20,10 @@ export default function Footer() {
 
         {/* Navigation */}
         <div>
-          <h4 className="text-lg font-semibold text-[#8b5e3c] mb-2">
+          <h4 className="text-lg font-medium text-[#8b5e3c] mb-3">
             Explore
           </h4>
-          <ul className="space-y-1.5">
+          <ul className="space-y-2">
             <li>
               <Link to="/" className="hover:text-[#8b5e3c]">
                 Home
@@ -52,10 +54,10 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h4 className="text-lg font-semibold text-[#8b5e3c] mb-2">
+          <h4 className="text-lg font-medium text-[#8b5e3c] mb-3">
             Contact
           </h4>
-          <ul className="space-y-1.5 text-[#cfcfcf]">
+          <ul className="space-y-2 text-[#cfcfcf] mb-4">
             <li>
               <a
                 href="mailto:grandpointdecor@gmail.com"
@@ -82,14 +84,40 @@ export default function Footer() {
                 Chat on WhatsApp
               </a>
             </li>
-            <li>MUSFFAH M9 ABU DHABI UAE</li>
+            <li className="text-[#bdbdbd]">
+              MUSFFAH M9 ABU DHABI UAE
+            </li>
           </ul>
+
+          {/* Social Icons */}
+          <div className="flex gap-4 text-lg">
+            <a
+              href="https://www.instagram.com/grand_point_decore_official?igsh=MW9qcG5lMXYxbjc5ZQ%3D%3D&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="hover:text-[#8b5e3c]"
+            >
+              <FiInstagram />
+            </a>
+            <a
+              href="https://www.tiktok.com/@grand.point.decor?_r=1&_t=ZS-92IFdxPFOZs"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+              className="hover:text-[#8b5e3c]"
+            >
+              <SiTiktok />
+            </a>
+          </div>
         </div>
       </div>
 
-      {/* Bottom bar */}
-      <div className="text-center text-xs py-3 border-t border-[#2a2a2a] text-[#bdbdbd]">
-        &copy; {new Date().getFullYear()} Grand Point. All rights reserved.
+      {/* Bottom Bar */}
+      <div className="border-t border-[#2a2a2a]">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 py-3 text-center text-xs text-[#bdbdbd]">
+          &copy; {new Date().getFullYear()} Grand Point. All rights reserved.
+        </div>
       </div>
     </footer>
   );

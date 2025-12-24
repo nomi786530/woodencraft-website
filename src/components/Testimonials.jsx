@@ -3,19 +3,19 @@ import React from "react";
 const testimonials = [
   {
     id: 1,
-    name: "Ayesha Khan",
+    name: "Sheikh Khalid Bin Muhammad",
     review:
       "Absolutely love the handcrafted products! The quality is amazing and the delivery was quick.",
   },
   {
     id: 2,
-    name: "Usman Ali",
+    name: "Sheikh Yousaf Al Mazroi",
     review:
       "Beautiful wooden pieces! They give such a warm and aesthetic vibe to my home.",
   },
   {
     id: 3,
-    name: "Sara Imran",
+    name: "Sheikha Mariam",
     review:
       "Top-notch craftsmanship and super friendly customer service. Highly recommend!",
   },

@@ -6,19 +6,36 @@ export default function WhatsAppButton() {
       href="https://wa.me/971556724192"
       target="_blank"
       rel="noopener noreferrer"
-      className="
-        fixed bottom-6 right-6 z-50
-        bg-[#25D366]
-        text-white
-        p-4
-        rounded-full
-        shadow-lg
-        hover:scale-105
-        transition-transform
-      "
       aria-label="Chat on WhatsApp"
+      className="fixed bottom-6 right-6 z-50 group"
     >
-      <FaWhatsapp size={28} />
+      {/* Pulse Ring */}
+      <span
+        className="
+          absolute inset-0
+          rounded-full
+          bg-[#25D366]/40
+          animate-ping
+          group-hover:hidden
+        "
+      />
+
+      {/* Button */}
+      <span
+        className="
+          relative
+          flex items-center justify-center
+          w-14 h-14
+          bg-[#25D366]
+          text-white
+          rounded-full
+          shadow-lg
+          transition-transform duration-300
+          group-hover:scale-105
+        "
+      >
+        <FaWhatsapp size={26} />
+      </span>
     </a>
   );
 }
