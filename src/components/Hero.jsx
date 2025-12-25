@@ -9,20 +9,20 @@ const slides = [
   {
     id: 1,
     image: "/images/hero1.jpg",
-    title: "Handcrafted Wooden Art",
-    subtitle: "Bring warmth and elegance to your home with our wooden crafts.",
+    title: "Grand Point Interior & Woodwork Studio",
+    subtitle: "Custom wooden interiors, furniture, and finishes crafted with precision",
   },
   {
     id: 2,
     image: "/images/hero2.jpg",
-    title: "Rustic Home Decor",
-    subtitle: "Perfect blend of tradition and modern design for your space.",
+    title: "Custom Interior Solutions",
+    subtitle: "Thoughtfully crafted furniture and woodwork tailored to your space",
   },
   {
     id: 3,
     image: "/images/hero3.jpg",
-    title: "Nature-Inspired Designs",
-    subtitle: "Grand Points made with love, inspired by the beauty of nature.",
+    title: "Built with Care. Finished with Precision.",
+    subtitle: "Quality materials, attention to detail, and workmanship you can rely on",
   },
 ];
 

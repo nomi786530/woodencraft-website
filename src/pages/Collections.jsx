@@ -9,72 +9,122 @@ export default function Collections() {
       "/images/wooden-cabnet-3.webp",
       "/images/kitchen-cab2.jpg",
       "/images/ceiling-gyp-2.jpg",
+      "/images/custom-7.jpg",
+      "/images/glass-part4.jpg",
+      "/images/office-int-5.webp",
+      "/images/ceiling-gyp-4.jpg"
+
     ],
     Furniture: [
       "/images/ferniture-1.webp",
       "/images/ferniture-2.webp",
       "/images/ferniture-3.webp",
       "/images/ferniture-4.webp",
+      "/images/ferniture-5.webp",
+      "/images/ferniture-6.webp",
+      "/images/ferniture-7.webp",
+      "/images/ferniture-8.webp"
     ],
     Decor: [
       "/images/decor-1.jpg",
       "/images/decor-2.jpg",
       "/images/decor-3.jpg",
       "/images/decor-4.jpg",
+      "/images/decor-5.jpg",
+      "/images/decor-6.jpg",
+      "/images/decor-7.jpg",
+      "/images/decor-8.jpg"
+
     ],
     "Wall Cladding": [
       "/images/wall-cladding-1.jpg",
       "/images/wall-cladding-2.jpg",
       "/images/wall-cladding-3.jpg",
       "/images/wall-cladding-4.jpg",
+      "/images/wall-cladding-5.jpg",
+      "/images/wall-cladding-6.jpg",
+      "/images/wall-cladding-7.jpg",
+      "/images/wall-cladding-8.jpg"
     ],
     "Wooden Cabinet": [
       "/images/wooden-cabnet-1.webp",
       "/images/wooden-cabnet-2.webp",
       "/images/wooden-cabnet-3.webp",
       "/images/wooden-cabnet-4.webp",
+      "/images/wooden-cabnet-5.webp",
+      "/images/wooden-cabnet-6.webp",
+      "/images/wooden-cabnet-7.webp",
+      "/images/wooden-cabnet-8.webp"
     ],
     "Kitchen Cabinet": [
       "/images/kitchen-cab1.jpg",
       "/images/kitchen-cab2.jpg",
       "/images/kitchen-cab3.jpg",
       "/images/kitchen-cab4.jpg",
+      "/images/kitchen-cab5.jpg",
+      "/images/kitchen-cab6.jpg",
+      "/images/kitchen-cab7.jpg",
+      "/images/kitchen-cab8.jpg"
     ],
     Wardrobe: [
       "/images/wardrobe1.webp",
       "/images/wardrobe2.webp",
       "/images/wardrobe3.webp",
       "/images/wardrobe4.webp",
+      "/images/wardrobe5.webp",
+      "/images/wardrobe6.webp",
+      "/images/wardrobe7.webp",
+      "/images/wardrobe8.webp"
     ],
     "Glass Partition": [
       "/images/glass-part1.jpg",
       "/images/glass-part2.jpg",
       "/images/glass-part3.jpg",
       "/images/glass-part4.jpg",
+      "/images/glass-part5.jpg",
+      "/images/glass-part6.jpg",
+      "/images/glass-part7.jpg",
+      "/images/glass-part8.jpg"
     ],
     "Ceiling & Gypsum Work": [
       "/images/ceiling-gyp-1.jpg",
       "/images/ceiling-gyp-2.jpg",
       "/images/ceiling-gyp-3.jpg",
       "/images/ceiling-gyp-4.jpg",
+      "/images/ceiling-gyp-5.jpg",
+      "/images/ceiling-gyp-6.jpg",
+      "/images/ceiling-gyp-7.jpg",
+      "/images/ceiling-gyp-8.jpg"
     ],
     "TV Units": [
       "/images/tv-unit-1.jpg",
       "/images/tv-unit-2.jpg",
       "/images/tv-unit-3.jpg",
       "/images/tv-unit-4.jpg",
+      "/images/tv-unit-5.jpg",
+      "/images/tv-unit-6.jpg",
+      "/images/tv-unit-7.jpg",
+      "/images/tv-unit-8.jpg"
     ],
     "Office Interiors": [
       "/images/office-int-1.webp",
       "/images/office-int-2.webp",
       "/images/office-int-3.webp",
       "/images/office-int-4.webp",
+      "/images/office-int-5.webp",
+      "/images/office-int-6.webp",
+      "/images/office-int-7.webp",
+      "/images/office-int-8.webp"
     ],
     "Custom Work": [
       "/images/custom-1.jpg",
       "/images/custom-2.jpg",
       "/images/custom-3.jpg",
       "/images/custom-4.jpg",
+      "/images/custom-5.jpg",
+      "/images/custom-6.jpg",
+      "/images/custom-7.jpg",
+      "/images/custom-8.jpg"
     ],
   };
 
@@ -181,14 +231,14 @@ export default function Collections() {
               ))}
             </div>
 
-            <div className="mt-10">
+            {/* <div className="mt-10">
               <Link
                 to="/gallery"
                 className="text-sm font-medium text-[#8b5e3c] hover:underline"
               >
                 View more work →
               </Link>
-            </div>
+            </div> */}
           </div>
 
         </div>

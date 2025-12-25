@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import WhatsAppButton from "./components/WhatsAppButton";
+import CallButton from "./components/CallButton";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <CallButton/>
       <WhatsAppButton/>
     </div>
   );
