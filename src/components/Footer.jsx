@@ -103,7 +103,7 @@ export default function Footer() {
             </li>
 
             <li className="text-[#bdbdbd] pt-1">
-              MUSFFAH M9 ABU DHABI UAE
+             Address :  MUSFFAH M9 ABU DHABI UAE
             </li>
           </ul>
 
