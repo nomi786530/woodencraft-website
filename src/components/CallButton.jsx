@@ -3,7 +3,7 @@ import { FiPhone } from "react-icons/fi";
 export default function CallButton() {
   return (
     <a
-      href="tel:+971556724192"
+      href="tel:+971553809056"
       aria-label="Call us"
       className="fixed bottom-24 right-6 z-50 group"
     >
