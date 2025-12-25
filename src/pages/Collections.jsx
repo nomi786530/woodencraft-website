@@ -11,7 +11,7 @@ export default function Collections() {
       "/images/ceiling-gyp-2.jpg",
       "/images/custom-7.jpg",
       "/images/glass-part4.jpg",
-      "/images/office-int-5.webp",
+      "/images/kitchen-cab1.jpg",
       "/images/ceiling-gyp-4.jpg"
 
     ],
