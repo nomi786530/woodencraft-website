@@ -110,7 +110,7 @@ export default function Footer() {
           {/* Social Icons */}
           <div className="flex gap-4 text-lg">
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/grand_point_decore_official?igsh=MW9qcG5lMXYxbjc5ZQ%3D%3D&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -119,7 +119,7 @@ export default function Footer() {
               <FiInstagram />
             </a>
             <a
-              href="https://www.tiktok.com/"
+              href="https://www.tiktok.com/@grand.point.decor?_r=1&_t=ZS-92IFdxPFOZs"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="TikTok"
