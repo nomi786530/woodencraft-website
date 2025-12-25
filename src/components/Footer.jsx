@@ -57,7 +57,8 @@ export default function Footer() {
           <h4 className="text-lg font-medium text-[#8b5e3c] mb-3">
             Contact
           </h4>
-          <ul className="space-y-2 text-[#cfcfcf] mb-4">
+
+          <ul className="space-y-1.5 text-[#cfcfcf] mb-4">
             <li>
               <a
                 href="mailto:grandpointdecor@gmail.com"
@@ -66,15 +67,31 @@ export default function Footer() {
                 grandpointdecor@gmail.com
               </a>
             </li>
+
+            {/* Phone Numbers */}
             <li>
-              <a
-                href="tel:+971556724192"
-                className="hover:text-[#8b5e3c]"
-              >
+              <a href="tel:+971556724192" className="hover:text-[#8b5e3c]">
                 +971 55 672 4192
               </a>
             </li>
             <li>
+              <a href="tel:+971523140903" className="hover:text-[#8b5e3c]">
+                +971 52 314 0903
+              </a>
+            </li>
+            <li>
+              <a href="tel:+971521999024" className="hover:text-[#8b5e3c]">
+                +971 52 199 9024
+              </a>
+            </li>
+            <li>
+              <a href="tel:+971553809056" className="hover:text-[#8b5e3c]">
+                +971 55 380 9056
+              </a>
+            </li>
+
+            {/* WhatsApp */}
+            <li className="pt-2">
               <a
                 href="https://wa.me/971556724192"
                 target="_blank"
@@ -84,7 +101,8 @@ export default function Footer() {
                 Chat on WhatsApp
               </a>
             </li>
-            <li className="text-[#bdbdbd]">
+
+            <li className="text-[#bdbdbd] pt-1">
               MUSFFAH M9 ABU DHABI UAE
             </li>
           </ul>
@@ -92,7 +110,7 @@ export default function Footer() {
           {/* Social Icons */}
           <div className="flex gap-4 text-lg">
             <a
-              href="https://www.instagram.com/grand_point_decore_official?igsh=MW9qcG5lMXYxbjc5ZQ%3D%3D&utm_source=qr"
+              href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -101,7 +119,7 @@ export default function Footer() {
               <FiInstagram />
             </a>
             <a
-              href="https://www.tiktok.com/@grand.point.decor?_r=1&_t=ZS-92IFdxPFOZs"
+              href="https://www.tiktok.com/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="TikTok"
