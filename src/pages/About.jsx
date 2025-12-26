@@ -110,11 +110,8 @@ export default function About() {
         </div>
 
         {/* ================= VISION / MISSION / QUALITY ================= */}
-        <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
-
+        <div className="bg-white rounded-2xl overflow-hidden shadow-sm mb-32">
           <div className="grid md:grid-cols-2 min-h-[420px]">
-
-            {/* Image */}
             <div className="relative">
               <img
                 src={slide.image}
@@ -125,7 +122,6 @@ export default function About() {
               <div className="absolute inset-0 bg-black/10" />
             </div>
 
-            {/* Content */}
             <div className="flex flex-col justify-center px-8 sm:px-14 py-12">
               <span className="text-sm uppercase tracking-wide text-[#8b5e3c] mb-3">
                 Our Philosophy
@@ -139,12 +135,10 @@ export default function About() {
                 {slide.text}
               </p>
 
-              {/* Navigation */}
               <div className="flex gap-4 mt-10">
                 <button
                   onClick={prevSlide}
                   className="w-10 h-10 flex items-center justify-center rounded-full border border-[#d6cec4] hover:bg-[#f3efe9]"
-                  aria-label="Previous"
                 >
                   <FiChevronLeft size={20} />
                 </button>
@@ -152,10 +146,66 @@ export default function About() {
                 <button
                   onClick={nextSlide}
                   className="w-10 h-10 flex items-center justify-center rounded-full border border-[#d6cec4] hover:bg-[#f3efe9]"
-                  aria-label="Next"
                 >
                   <FiChevronRight size={20} />
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ================= OUR TEAM ================= */}
+        <div>
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-[#8b5e3c]">
+              Our Team
+            </h2>
+            <p className="mt-4 text-[#4b4b4b] leading-relaxed">
+              A dedicated team of designers, craftsmen, and installers working
+              together to deliver quality interior and woodwork solutions.
+            </p>
+          </div>
+
+          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+            <div className="bg-white rounded-xl overflow-hidden shadow-sm">
+              <img
+  src="images/manager.jpeg"
+  className="w-full h-[260px] object-cover object-center"
+  loading="lazy"
+/>
+
+              <div className="p-5">
+                <p className="text-sm font-medium text-[#4b4b4b]">
+                  Design & Planning Manager
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl overflow-hidden shadow-sm">
+              <img
+                src="images/workshop.jpeg"
+                alt="Workshop Team"
+                className="w-full h-64 object-cover"
+                loading="lazy"
+              />
+              <div className="p-5">
+                <p className="text-sm font-medium text-[#4b4b4b]">
+                  Workshop Manager
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl overflow-hidden shadow-sm">
+              <img
+                src="/images/installation.jpeg"
+                alt="On-Site Installation Team"
+                className="w-full h-64 object-cover"
+                loading="lazy"
+              />
+              <div className="p-5">
+                <p className="text-sm font-medium text-[#4b4b4b]">
+                  On-Site Installation
+                </p>
               </div>
             </div>
           </div>

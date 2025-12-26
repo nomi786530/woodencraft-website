@@ -6,28 +6,27 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinkClass = ({ isActive }) =>
-    `text-sm font-semibold transition-colors duration-200 ${
+    `text-sm font-medium transition-colors duration-200 ${
       isActive
         ? "text-[#8b5e3c]"
         : "text-[#4b4b4b] hover:text-[#8b5e3c]"
     }`;
 
   return (
-    <header className="bg-[#f8f5f1] sticky top-0 z-50 border-b border-[#e5dfd7]">
-      <nav className="h-16 flex items-center justify-between max-w-7xl mx-auto px-6 sm:px-8">
-        
-        {/* Brand (Text Logo) */}
-        <Link to="/" className="flex flex-col leading-tight">
-          <span className="text-lg font-bold tracking-wide text-[#8b5e3c]">
-            Grand Point
-          </span>
-          <span className="text-xs text-[#4b4b4b]">
-            Decor & Maintenance
-          </span>
+    <header className="bg-[#f8f5f1] shadow-sm sticky top-0 z-50">
+      <nav className="max-w-7xl mx-auto px-6 sm:px-10 h-16 flex items-center justify-between">
+
+        {/* Logo */}
+        <Link to="/" className="flex items-center">
+          <img
+            src="/images/logo.png"
+            alt="Grand Point"
+            className="h-10 w-auto object-contain"
+          />
         </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-6">
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center gap-8">
           <NavLink to="/" className={navLinkClass}>
             Home
           </NavLink>
@@ -46,20 +45,18 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Toggle */}
-        <div className="md:hidden">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-2xl text-[#8b5e3c]"
-            aria-label="Toggle Menu"
-          >
-            {isOpen ? <FiX /> : <FiMenu />}
-          </button>
-        </div>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden text-2xl text-[#8b5e3c]"
+          aria-label="Toggle Menu"
+        >
+          {isOpen ? <FiX /> : <FiMenu />}
+        </button>
       </nav>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#f8f5f1] px-6 pb-4 border-t border-[#e5dfd7]">
+        <div className="md:hidden bg-[#f8f5f1] px-6 pb-4 shadow-sm">
           {[
             { to: "/", label: "Home" },
             { to: "/collections", label: "Collections" },
